@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"net"
 	"time"
-	"util/nat/natlib"
+
+	"github.com/mic-yu/nat/natlib"
 )
 
 type NATCLICONN struct {

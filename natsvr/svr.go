@@ -5,7 +5,8 @@ import (
 	"net"
 	"sync"
 	"time"
-	"util/nat/natlib"
+
+	"github.com/mic-yu/nat/natlib"
 )
 
 var mUserNatClient map[string][]net.Conn

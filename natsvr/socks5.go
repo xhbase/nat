@@ -4,7 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 	"net"
-	"util/nat/natlib"
+
+	"github.com/mic-yu/nat/natlib"
 )
 
 func NatCreateConn(c net.Conn, addr string) error {
