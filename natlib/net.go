@@ -84,5 +84,4 @@ func JointConn(c1 net.Conn, c2 net.Conn) {
 	wg.Wait()
 
 	fmt.Println("exit joint")
-
 }

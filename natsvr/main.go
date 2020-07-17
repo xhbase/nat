@@ -6,11 +6,11 @@ import (
 	"net"
 )
 
-var nat_svraddr string = ":8080"
+var nat_svraddr string = ":1082"
 var socks5_svraddr string = ":1080"
 
 func main() {
-	flag.StringVar(&nat_svraddr, "svraddr", ":8080", "nat service addr 202.36.25.188:8080")
+	flag.StringVar(&nat_svraddr, "svraddr", ":1082", "nat service addr 202.36.25.188:1082")
 	flag.StringVar(&socks5_svraddr, "socks5addr", ":1080", "sock5 service addr 202.36.25.188:1080")
 	flag.Parse()
 

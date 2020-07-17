@@ -188,7 +188,7 @@ func Socks5MethodCheck(c net.Conn) error {
 	}
 
 	if !userpass {
-		d1[2] = 0xff
+		d1[1] = 0xff
 		natlib.SendAll(c, d1)
 		return fmt.Errorf("not support ver %v", d1[0])
 	}

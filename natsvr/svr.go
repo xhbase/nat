@@ -23,6 +23,7 @@ func InsertNatCliConn(user string, c net.Conn) {
 	lst, _ := mUserNatClient[user]
 	lst = append(lst, c)
 	mUserNatClient[user] = lst
+	fmt.Println(user, " conn cnt:", len(lst))
 }
 
 func PopNatCliConn(user string) net.Conn {
@@ -32,6 +33,7 @@ func PopNatCliConn(user string) net.Conn {
 	if !ok {
 		return nil
 	}
+
 	if len(lst) > 0 {
 		mUserNatClient[user] = lst[1:]
 		return lst[0]
